@@ -67,8 +67,34 @@ str8 = "this thing ain't going anywhere"
 # print(str8.endswith("e"))
 
 # print(" ".join(["why", "this", "kolaveri", "d"]))
-str9 = "hello"
-print(str9.center(len(str8)+10,"*"))
-print(str9.rjust(10));
-print(str9.ljust(10,"!"));
-print(str9.count("l"))
+str9 = "hEllo"
+# print(str9.center(len(str8)+10,"*"))
+# print(str9.rjust(10));
+# print(str9.ljust(10,"!"));
+# print(str9.count("l"))
+
+# print(str9.index("l"))
+# print(str9.find("l"))
+# print(str9.find("f"))
+# print(str9.index("f"))
+
+# print(str9.swapcase())
+
+# formatting in string
+
+name = "ganesh"
+age = 22
+statement = "the name is {} and age is {}"
+print(statement.format(name, age))
+
+# using index to make string in order wise
+
+sport = "cricket"
+player = "kohli"
+retired = "not"
+
+statement2 = "does {2} who plays {1} is still {0} retired?"
+print(statement2.format(retired,  sport,player))
+
+# using f strings
+print(f"player is {player} and sport is {sport}") 
