@@ -7,7 +7,7 @@ class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
         if event.src_path.endswith(".py"):  # Check if the modified file is a Python file
             print(f"Detected change in {event.src_path}. Restarting script...")
-            subprocess.run(["python", "03_typeconversion.py"])
+            subprocess.run(["python", "04_operators.py"])
 
 if __name__ == "__main__":
     event_handler = MyHandler()
